@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgba(13, 13, 94, 0.7), rgba(18, 45, 99, 0.459)),url(images.jpg);
+    background-size: cover;
+    
+}
+.box1{
+    max-height: 200vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.png{
+    width: 60vh;
+    height: 30vh;
+    margin-top: 10%;
+    margin-bottom: 2.5%;
+    animation: apperance 3.5s;
+    animation-fill-mode: forwards;
+    transition: all ease-out;
+    opacity: 0;
+}
+@keyframes apperance{
+    from {opacity: 0;}
+    to{opacity: 100;}
+}
+@keyframes moveup {
+    from {opacity: 0;
+    transform: translateY(20vh);}
+    to{opacity: 100;
+    transform: translateY(0rem);}
+}
+.wel{
+    font-family: 'Mukta', sans-serif;
+    font-size: 3.5vh;
+    animation: apperance 4s;
+    animation-delay: 2s;
+    transition: all ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    color: white;
+    
+
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+
+}
+#info{
+    border: rgb(17, 56, 230) solid 0.5vh;
+    background: rgb(17, 56, 230);
+    padding: 2vh;
+    border-radius: 4vh;
+    padding-right: 2.75vh;
+    padding-left: 2.75vh;
+    margin: 3vh;
+    cursor: pointer;
+    animation: moveup 2s;
+    animation-fill-mode: forwards;
+    transition: all ease-out;
+    opacity: 0;
+    transition: all ease-out 0.4s;
+   
+}
+#info:hover{
+    background-color: rgb(0, 47, 255);
+    color: white;
+}
+#contact{
+    border: rgb(17, 56, 230) solid 0.5vh;
+    background-color: rgb(17, 56, 230);
+    padding: 2vh;
+    border-radius: 4vh;
+    animation: moveup 2s;
+    animation-delay: 250ms;
+    margin: 3vh;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+    transition: all ease-out;
+    opacity: 0;
+    transition: all ease-out 0.4s;
+   
+}
+#contact:hover{
+    background-color: rgb(0, 47, 255);
+    color: white;
+}
+#events{
+    border: rgb(17, 56, 230) solid 0.5vh;
+    background-color: rgb(17, 56, 230);
+    padding: 2vh;
+    border-radius: 4vh;
+    animation: moveup 2s;
+    animation-delay: 350ms;
+    margin: 3vh;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+    transition: all ease-out;
+    opacity: 0;
+    transition: all ease-out 0.4s;
+}
+#events:hover{
+    background-color: rgb(0, 47, 255);
+    color: white;
+}
+.fas{
+    font-size: 3vh;
+}
+#slider{
+    height: 90vh;
+    width: 70vh;
+    display: flex;
+    flex-flow: row;
+    border: 10px solid yellow;
+    float: right;
+    margin-top: -60vh;
+}
